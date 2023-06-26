@@ -1,0 +1,14 @@
+{
+  "IP": "1.1.1.1",
+  "USER": "root",
+  "PASS": "suasenha",
+  "APP_URL": "https://cdn.discordapp.com/attachments/954827792284012624/1119144935132770344/equipevip.apk",
+  "minutos_teste": "5",
+  "TOKEN": "APP_USR",
+  "VALOR_PAGAMENTO": "0.01",
+  "EMAIL": "teste@gmail.com",
+  "video_tutorial": "https://cdn.discordapp.com/attachments/954827792284012624/1116792352439271526/screen-20230609-140846.mp4",
+  "apk_url": "https://cdn.discordapp.com/attachments/954827792284012624/1119144935132770344/equipevip.apk",
+  "numero_dono": "559291796111",
+  "APIKEY": "fW8p56x8"
+}

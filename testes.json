@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "number": "559291796111@c.us",
+      "date": "2023-06-09T18:06:44.068Z",
+      "user": "VIP3614785",
+      "status": true,
+      "isNotified": true
+    },
+    {
+      "number": "558191818966@c.us",
+      "date": "2023-06-09T21:16:06.387Z",
+      "user": "VIP7643918",
+      "status": true,
+      "isNotified": true
+    },
+    {
+      "number": "120363133004709896@g.us",
+      "date": "2023-06-10T05:55:50.741Z",
+      "user": "VIP5294063",
+      "status": true,
+      "isNotified": true
+    },
+    {
+      "number": "553488302860@c.us",
+      "date": "2023-06-10T15:07:55.505Z",
+      "user": "VIP8026459",
+      "status": true,
+      "isNotified": true
+    },
+    {
+      "number": "558894423590@c.us",
+      "date": "2023-06-10T16:50:15.404Z",
+      "user": "VIP4956081",
+      "status": true,
+      "isNotified": true
+    },
+    {
+      "number": "5511985101823@c.us",
+      "date": "2023-06-10T18:09:39.311Z",
+      "user": "VIP5602473",
+      "status": true,
+      "isNotified": true
+    },
+    {
+      "number": "554599568060@c.us",
+      "date": "2023-06-11T23:48:08.416Z",
+      "user": "VIP5067813",
+      "status": true,
+      "isNotified": true
+    },
+    {
+      "number": "554896242953@c.us",
+      "date": "2023-06-12T06:15:57.349Z",
+      "user": "VIP2831694",
+      "status": true,
+      "isNotified": true
+    }
+  ]
+}

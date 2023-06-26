@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gestor vip</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- This parts is optional, just for improve the styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      padding: 20px;
+    }
+    #app {
+      max-width: 500px;
+      margin: 20px auto;
+    }
+    #qrcode {
+      display: none; /* Showed when qr code received */
+      width: 100%;
+      margin: 10px 0;
+      border: 1px solid #efefef;
+      border-radius: 4px;
+    }
+    ul.logs {
+      max-height: 150px;
+      padding: 15px 15px 15px 30px;
+      margin-top: 5px;
+      border-radius: 4px;
+      overflow-y: auto;
+      background: #efefef;
+      color: #666;
+      font-size: 14px;
+    }
+    ul.logs li:first-child {
+      color: green;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+	<div id="app">
+		<h1>GESTOR BOT SSH</h1>
+		<p><h5>O MELHOR BOT DE VENDAS SSH</h5></p>
+		<br>
+		<p><h5>pix dinâmico ( copia e cola )</h5></p>
+		<br>
+		<p><h5>sistema de aviso integrado</h5></p>
+		<br>
+		<p><h5>envia o apk, envia tutorial mp4</h5></p>
+		<br>
+		<p><h5>você controla tudo direto do seu whatsapp</h5></p>
+		<img src="" alt="QR Code" id="qrcode">
+		<h3>Logs:</h3>
+		<ul class="logs"></ul>
+		<a href="https://wa.me/559291796111?text=Quero%20assinar%20o%20rob%C3%B4%20de%20vendas%20ssh" class="button">Assinar robô</a>
+		<p><h4>para ver os comandos adm va no pv de seu robô que escaneou e digite /comandosadm antes de dar esse comando va no arquivo .env do robô e mude o número do dono</h4></p>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function() {
+			var socket = io();
+
+			socket.on('message', function(msg) {
+				$('.logs').prepend($('<li>').text(msg));
+			});
+
+			socket.on('qr', function(src) {
+				$('#qrcode').attr('src', src);
+				$('#qrcode').show();
+			});
+
+			socket.on('ready', function(data) {
+				$('#qrcode').hide();
+			});
+
+			socket.on('authenticated', function(data) {
+				$('#qrcode').hide();
+			});
+		});
+	</script>
+</body>
+</html>
